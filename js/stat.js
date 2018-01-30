@@ -70,6 +70,6 @@ window.renderStatistics = function(ctx, names, times) {
     } else {
       ctx.fillStyle = "rgba(0, 0, 255," + Math.random() + ")";
     }
-    ctx.fillRect(CLOUD_X + GAP + (GAP + TEXT_WIDTH) * i, GAP + FONT_GAP + FONT_GAP , BAR_WIDTH ,(barHeight * times[i]) / maxTime );
+    ctx.fillRect(CLOUD_X + GAP + (GAP + TEXT_WIDTH) * i, barHeight + GAP + FONT_GAP + FONT_GAP, BAR_WIDTH , -(barHeight * times[i]) / maxTime );
   }
 }
