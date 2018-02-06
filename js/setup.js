@@ -26,9 +26,10 @@ var generateRandomData = function () {
       eyesColor: EYES_COLOR[getRandomInt(0, EYES_COLOR.length - 1)]
     });
   }
+  return wizardData;
 };
 
-generateRandomData();
+wizardData = generateRandomData();
 
 var renderWizard = function (wizard) {
   var wizardElement = similarWizardTemplate.cloneNode(true);
