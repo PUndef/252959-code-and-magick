@@ -7,12 +7,14 @@ var setupOpenIcon = document.querySelector('.setup-open-icon');
 var setupWizard = document.querySelector('.setup-wizard');
 var wizardCoat = setupWizard.querySelector('.wizard-coat');
 var wizardEyes = setupWizard.querySelector('.wizard-eyes');
+var setupFireball = document.querySelector('.setup-fireball-wrap');
 
 var countObject = 4;
 var WIZARD_NAMES = ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
 var WIZARD_SURNAME = ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
 var COAT_COLOR = ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55)', 'rgb(0, 0, 0)'];
 var EYES_COLOR = ['black', 'red', 'blue', 'yellow', 'green'];
+var FIREBALL_COLOR = ['#ee4830', '#30a8ee', '#5ce6c0', '#e848d5', '#e6e848'];
 var wizardData = [];
 
 var similarListElement = setup.querySelector('.setup-similar-list');
@@ -83,4 +85,8 @@ wizardCoat.addEventListener('click', function () {
 
 wizardEyes.addEventListener('click', function () {
   wizardEyes.style.fill = EYES_COLOR[getRandomInt(0, EYES_COLOR.length - 1)];
+});
+
+setupFireball.addEventListener('click', function () {
+  setupFireball.style.backgroundColor = FIREBALL_COLOR[getRandomInt(0, FIREBALL_COLOR.length - 1)];
 });
