@@ -6,6 +6,7 @@ var setupClose = setup.querySelector('.setup-close');
 var setupOpenIcon = document.querySelector('.setup-open-icon');
 var setupWizard = document.querySelector('.setup-wizard');
 var wizardCoat = setupWizard.querySelector('.wizard-coat');
+var wizardEyes = setupWizard.querySelector('.wizard-eyes');
 
 var countObject = 4;
 var WIZARD_NAMES = ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
@@ -78,4 +79,8 @@ setupOpenIcon.addEventListener('keydown', function (evt) {
 
 wizardCoat.addEventListener('click', function () {
   wizardCoat.style.fill = COAT_COLOR[getRandomInt(0, COAT_COLOR.length - 1)];
+});
+
+wizardEyes.addEventListener('click', function () {
+  wizardEyes.style.fill = EYES_COLOR[getRandomInt(0, EYES_COLOR.length - 1)];
 });
