@@ -13,7 +13,7 @@
     closePopup: function () {
       setup.classList.add('hidden');
       document.removeEventListener('keydown', window.util.onPopupEscPress);
-      window.popup.setPositionPopup(POSITION_TOP_POPUP_DEFAULT, POSITION_LEFT_POPUP_DEFAULT);
+      window.dialogUtil.setPositionPopup(POSITION_TOP_POPUP_DEFAULT, POSITION_LEFT_POPUP_DEFAULT);
     },
     setPositionPopup: function (positionTop, positionLeft) {
       setup.style.top = positionTop;
