@@ -27,7 +27,7 @@
         y: moveEvt.clientY
       };
 
-      window.popup.setPositionPopup(setup.offsetTop - shift.y + 'px', setup.offsetLeft - shift.x + 'px');
+      window.dialogUtil.setPositionPopup(setup.offsetTop - shift.y + 'px', setup.offsetLeft - shift.x + 'px');
 
     };
 

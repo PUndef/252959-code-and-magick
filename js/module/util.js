@@ -24,7 +24,7 @@
       }
     },
     onPopupEscPress: function (evt) {
-      window.util.isEscEvent(evt, window.popup.closePopup);
+      window.util.isEscEvent(evt, window.dialogUtil.closePopup);
     },
     colorizeElement: function (element, styleName, colorOptions) {
       element.style[styleName] = colorOptions[window.util.getRandomInt(0, colorOptions.length - 1)];

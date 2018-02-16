@@ -11,11 +11,11 @@
   setup.querySelector('.setup-similar').classList.remove('hidden');
 
   setupOpen.addEventListener('click', function () {
-    window.popup.openPopup();
+    window.dialogUtil.openPopup();
   });
 
   setupClose.addEventListener('click', function () {
-    window.popup.closePopup();
+    window.dialogUtil.closePopup();
   });
 
   setupClose.addEventListener('keydown', function (evt) {

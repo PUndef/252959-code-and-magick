@@ -5,7 +5,7 @@
   var POSITION_LEFT_POPUP_DEFAULT = '50%';
   var setup = document.querySelector('.setup');
 
-  window.popup = {
+  window.dialogUtil = {
     openPopup: function () {
       setup.classList.remove('hidden');
       document.addEventListener('keydown', window.util.onPopupEscPress);
